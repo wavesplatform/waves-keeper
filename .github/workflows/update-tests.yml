@@ -10,7 +10,7 @@ jobs:
       - uses: styfle/cancel-workflow-action@0.11.0
       # Build current branch
       - name: Get Current branch source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           cache: yarn
@@ -23,7 +23,7 @@ jobs:
       - name: Find last tag
         run: echo 'LAST_TAG='$(git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`) >> $GITHUB_ENV
       - name: Get sources from last tag
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: '${{ env.LAST_TAG }}'
           clean: false
