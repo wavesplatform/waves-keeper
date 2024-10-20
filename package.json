@@ -124,7 +124,7 @@
     "source-map-loader": "^4.0.1",
     "stylelint": "^15.0.0",
     "stylelint-order": "^6.0.0",
-    "stylus": "^0.59.0",
+    "stylus": "^0.64.0",
     "stylus-loader": "^7.0.0",
     "typescript": "^4.7.4",
     "wait-for-expect": "^3.0.2",
